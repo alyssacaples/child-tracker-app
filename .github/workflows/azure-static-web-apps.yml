@@ -28,6 +28,7 @@ jobs:
           app_location: "/" # App source code path
           api_location: "" # Api source code path - leave blank for no api
           output_location: "build" # Built app content directory - default is build
+          app_build_command: "npm run build:azure"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

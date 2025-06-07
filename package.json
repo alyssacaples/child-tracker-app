@@ -20,8 +20,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:azure": "react-scripts build && cp staticwebapp.config.json build/",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "bash ./scripts/pre-deploy.sh"
   },
   "eslintConfig": {
     "extends": [
